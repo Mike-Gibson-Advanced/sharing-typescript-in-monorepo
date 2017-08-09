@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es2015",
+        "inlineSourceMap": true,
+        "outDir": "./dist",
+        "removeComments": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./typings"
+        ],
+        "skipLibCheck": true,
+        "strict": true,
+        "strictNullChecks": true, // Even though this falls under the "strict" flag,
+                                  // we need it set for schema generation, as this uses
+                                  // TypeScript 2.1 which isn't aware of the strict flag.
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
