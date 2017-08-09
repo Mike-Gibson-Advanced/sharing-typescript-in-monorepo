@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "rimraf": "^2.6.1",
     "typescript": "^2.4.2"
   },
   "scripts": {
-    "build": "tsc"
+    "go": "rimraf dist && tsc --traceResolution && node ./dist/server.js"
   }
 }
