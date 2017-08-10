@@ -2,7 +2,7 @@
  //import * as shared2 from "./shared/mySharedThing";
  
 // symlink
-import * as shared3 from "./shared/mySharedThing";
+import * as shared3 from "./shared-1/mySharedThing";
 
 export const result = {
     server: "server",
